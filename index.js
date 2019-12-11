@@ -7,18 +7,32 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      name: 'React'
+      name: 'Simon'
     };
+  }
+
+  shoot() {
+    alert("GOD HELP ME");
   }
 
   render() {
     return (
       <div>
-        
+        <Hello name={this.state.name} />
+        <form>
+          <button type="button" id="searchButton" onClick={this.shoot}>
+          <i class="material-icons">something</i>
+          </button>
+	      </form>
       </div>
     );
   }
 }
+
+
+
+
+
 
 //<Hello name={this.state.name} />
 
