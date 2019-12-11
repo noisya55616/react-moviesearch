@@ -7,18 +7,23 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      name: 'Simon'
+      name: 'Simon',
+      movie: 'froSimonzen'
     };
+    this.shoot = this.shoot.bind(this);
   }
 
   shoot() {
-    alert("GOD HELP ME");
+    this.setState((state) => {
+     return {movie: 'Frozen'}
+    });
+    
   }
 
   render() {
     return (
       <div>
-        <Hello name={this.state.name} />
+        <Hello name={this.state.movie} />
         <form>
           <button type="button" id="searchButton" onClick={this.shoot}>
           <i class="material-icons">something</i>
