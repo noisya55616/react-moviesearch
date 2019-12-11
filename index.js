@@ -22,4 +22,4 @@ class App extends Component {
 
 //<Hello name={this.state.name} />
 
-render(<App />, document.getElementById('root'));
+render(<App />, document.getElementById('app'));
