@@ -14,12 +14,7 @@ class App extends Component {
   render() {
     return (
       <div>
-          <h1>Movie Search</h1>
-        <p>
-          Welcome to our site. Very work in progress.
-        </p>
         
-        <img src="https://developer.nytimes.com/files/poweredby_nytimes_200c.png?v=1568441068934"></img>
       </div>
     );
   }
